@@ -1,49 +1,121 @@
 /*stylesheet*/
 
 body {
-	margin:20px;
-	background: olive;
-	color: navy;
-	font-family:'Roboto Mono', monospace;
+	margin: 0;	
+	background: white;
+	color: white;
+	font-family: 'Roboto Mono', monospace;
 	font-weight: 200;
 }
 
-h1, h2, h3, h4 {
-		front-weight:200;
+h1, h2, h3, h4, p {
+	margin-top: 300;
+	margin-bottom: 1em;
 }
 
 h1, h2 {
-
-	font-weight: 200;
+	font-weight: 700;
 }
 
 #wrapper {
 	margin: 2em auto;
-	max-width: 1200px;
-	padding: 0 2em;
+	max-width: 2500px;
 }
 
 #main {
-	background: gray;
-	margin: 2em;
-	padding: 2em;
+	background-image: url("../images/quiet_of_the_tide.jpg");
+	background-size: 100%;
+	margin: 1em;
+	padding: 1em;
 }
+
 #sidebar {
-	background: yellow;
+	background: transparent;
+}
+
+#logo {
+	padding: 3em 0;
+	float: left;
+	
+}
+
+#logo h1 {
+	margin: 0;
+}
+
+#logo img, .item img {
+	width: 75%;
+	height: 100%;
+	 border-radius: 8px;
+}
+
+
+.item img {
+	margin-bottom: 2em;
 }
 
 #content {
-	background: red;
+	
 }
 
-@media (max-width: 699px)	{
+#nav ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0
+}
+
+#nav li {
+	margin-bottom: 1em;
+	
+}
+#nav li a: hover {
+	color: white;
+	text-decoration: none;
+}
+
+.quote-holder {
+	height: 40vh;
+	background: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 3em;
+}
+
+.quote {
+	font-size: 4em;
+	font-family: 'Roboto Mono', monospace; 
+}
+
+
+@media (max-width: 699px) {
 
 	#wrapper {
 		margin: 0em auto;
 	}
 
 	#main {
-		margin: 1em;
+		margin: 0em;
 		padding: 0em;
 	}
+
+	#logo {
+		text-align: center;
+		padding: 0em ;
+	}
+
+	#nav ul {
+		display: flex;
+		justify-content: space-between;
+		
+}
+
+	#nav li {
+		display: inline;
+		padding: .25em;
+		background: white;
+		margin-bottom: 0;
+		
+	}
+
 }
