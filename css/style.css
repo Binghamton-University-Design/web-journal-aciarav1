@@ -47,7 +47,10 @@ h1, h2 {
 #logo img, .item img {
 	width: 75%;
 	height: 100%;
-	 border-radius: 8px;
+}
+
+#logo img {
+	border-radius: 8px;
 }
 
 
@@ -88,6 +91,14 @@ h1, h2 {
 	font-family: 'Roboto Mono', monospace; 
 }
 
+#exquisite img {
+	margin-bottom: 0;
+	width: 100%;
+}
+
+#exquisite .grid {
+	grid-gap: 0;
+}
 
 @media (max-width: 699px) {
 
